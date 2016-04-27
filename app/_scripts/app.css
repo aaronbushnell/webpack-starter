@@ -1,0 +1,29 @@
+.Accordions {
+  margin: 0 0 2rem;
+}
+.js .Accordions__content {
+  display: none;
+  padding: .5rem 1rem;
+}
+.js .Accordions__content--open {
+  display: block;
+}
+.Accordions__accordion {
+  border-color: #999;
+  border-style: solid;
+  border-width: 1px;
+}
+.Accordions__accordion:not(:first-child) {
+  border-top: none;
+}
+.Accordions__title {
+  background: #eee;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0;
+}
+.Header {
+  background: #aaa;
+  padding: 2rem;
+  margin: 0 0 1rem;
+}
