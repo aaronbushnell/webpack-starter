@@ -54,6 +54,10 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
+	var _Footer = __webpack_require__(13);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	document.documentElement.classList.remove('no-js');
@@ -66,6 +70,7 @@
 	}
 
 	new _Header2.default();
+	new _Footer2.default();
 
 /***/ },
 /* 1 */
@@ -319,6 +324,21 @@
 
 /***/ },
 /* 11 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 12 */,
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	__webpack_require__(14);
+
+/***/ },
+/* 14 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

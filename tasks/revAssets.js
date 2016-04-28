@@ -1,13 +1,17 @@
-var Version = require("node-version-assets");
+const Version = require("node-version-assets");
+const globby = require("globby");
+const assets = [
+  'dist/_scripts/*.{js,css}',
+  'dist/images/*.{png,jpg,gif,jpeg}'
+];
 
-var versionInstance = new Version({
-    assets: [
-      'dist/_scripts/app.js',
-      'dist/_scripts/app.css'
-    ],
+globby(assets).then(paths => {
+  const versionInstance = new Version({
+    assets: paths,
     grepFiles: [
       './dist/*.html'
     ]
-});
+  });
 
-versionInstance.run();
+  versionInstance.run();
+});

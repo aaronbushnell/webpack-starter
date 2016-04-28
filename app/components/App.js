@@ -1,5 +1,6 @@
 import Accordion from './Accordion';
 import Header from './Header';
+import Footer from './Footer';
 
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js');
@@ -11,3 +12,4 @@ if (document.querySelector('[data-accordion]')) {
 }
 
 new Header();
+new Footer();
