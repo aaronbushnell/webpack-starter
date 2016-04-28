@@ -7,11 +7,11 @@ let path = require("path"),
 
 module.exports = {
   entry: {
-    app: "./app/components/App.js"
+    app: "./dist/components/App.js"
   },
 
   output: {
-    path: __dirname + '/app/_scripts/',
+    path: __dirname + '/dist/_scripts/',
     publicPath: '/_scripts/',
     filename: "[name].js",
     chunkFilename: "[name]_[chunkhash].js"

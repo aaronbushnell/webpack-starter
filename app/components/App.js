@@ -1,5 +1,5 @@
-import Accordion from './components/Accordion';
-import Header from './components/Header';
+import Accordion from './Accordion';
+import Header from './Header';
 
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js');
