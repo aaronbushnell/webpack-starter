@@ -1,0 +1,14 @@
+{
+  "dest": "./app/_scripts/modernizr.js",
+  "options" : [
+    "setClasses",
+    "addTest",
+    "testProp",
+    "fnBind"
+  ],
+  "files": {
+    "src": [
+      "./app/components/**/*.{js,css}"
+    ]
+  }
+}

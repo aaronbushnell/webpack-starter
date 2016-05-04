@@ -7,7 +7,8 @@ let path = require("path"),
 
 module.exports = {
   entry: {
-    app: "./app/components/App.js"
+    app: "./app/components/App.js",
+    vendor: "./app/components/Vendor.js"
   },
 
   output: {

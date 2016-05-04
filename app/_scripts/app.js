@@ -60,9 +60,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	document.documentElement.classList.remove('no-js');
-	document.documentElement.classList.add('js');
-
 	if (document.querySelector('[data-accordion]')) {
 	  for (var i = 0; i < document.querySelectorAll('[data-accordion]').length; i++) {
 	    new _Accordion2.default(document.querySelectorAll('[data-accordion]')[i]);
@@ -335,7 +332,19 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	__webpack_require__(14);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Footer = function Footer() {
+	  _classCallCheck(this, Footer);
+	};
+
+	exports.default = Footer;
 
 /***/ },
 /* 14 */

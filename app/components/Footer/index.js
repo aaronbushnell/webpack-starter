@@ -1,1 +1,6 @@
-import './index.css'
+import './index.css';
+
+export default class Footer {
+  constructor () {
+  }
+}
