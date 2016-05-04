@@ -1,8 +1,7 @@
 const Version = require("node-version-assets");
 const globby = require("globby");
 const assets = [
-  'dist/_scripts/*.{js,css}',
-  'dist/images/*.{png,jpg,gif,jpeg,svg}'
+  'dist/_scripts/*.{js,css}'
 ];
 
 globby(assets).then(paths => {

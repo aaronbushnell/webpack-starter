@@ -1,5 +1,5 @@
 .Header {
-  background: #aaa;
+  background: #aaa url('/images/test.png');
   padding: 2rem;
   margin: 0 0 1rem;
 }
