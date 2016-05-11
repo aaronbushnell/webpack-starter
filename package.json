@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npm run cleanScripts && npm run modernizr && npm run scripts:app",
+    "watch": "npm run cleanScripts && npm run modernizr:app && npm run scripts:app",
     "cleanScripts": "rm -rf ./app/_scripts",
-    "modernizr": "./node_modules/.bin/customizr -c ./tasks/modernizr.json",
+    "modernizr:app": "./node_modules/.bin/customizr -c ./tasks/modernizr.json",
     "scripts:app": "webpack -w",
 
-    "start": "npm run clean && npm run copy && npm run scripts:dist && npm run cleanComponents & npm run images && npm run rev",
+    "start": "npm run clean && npm run copy && npm run modernizr:dist && npm run scripts:dist && npm run cleanComponents & npm run images && npm run rev",
     "clean": "rm -rf ./dist/",
     "copy": "cp -r ./app/ ./dist/ && rm -rf ./dist/_scripts && rm -rf ./dist/images",
+    "modernizr:dist": "npm run modernizr:app && mkdir ./dist/_scripts && cp ./app/_scripts/modernizr.js ./dist/_scripts/",
     "scripts:dist": "NODE_ENV=production webpack -p --config webpack.production.config.babel.js",
     "cleanComponents": "rm -rf ./dist/components",
     "images": "node ./tasks/minifyimages.js",
