@@ -1,13 +1,12 @@
-const Imagemin = require('imagemin');
+const imagemin = require('imagemin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const imageminPngquant = require('imagemin-pngquant');
+const imageminSvgo = require('imagemin-svgo');
 
-new Imagemin()
-  .src('app/images/*.{gif,jpg,png,svg}')
-  .dest('dist/images')
-  .use(Imagemin.jpegtran({progressive: true}))
-  .use(Imagemin.optipng({optimizationLevel: 3}))
-  .use(Imagemin.svgo([
-    { cleanupListOfValues: { floatPrecision: 2 } },
-    { cleanupNumericValues: { floatPrecision: 2 } },
-    { convertPathData: { floatPrecision: 2 } }
-  ]))
-  .run();
+imagemin(['dist/images/**/*.{jpg,jpeg,png,svg}'], '.', {
+  plugins: [
+    imageminMozjpeg({ targa: true }),
+    imageminPngquant({ quality: '65-80' }),
+    imageminSvgo()
+  ]
+});
