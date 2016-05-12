@@ -1,5 +1,5 @@
 {
-  "dest": "./app/_scripts/modernizr.js",
+  "dest": "./app/components/Modernizr/index.js",
   "options" : [
     "setClasses",
     "addTest",

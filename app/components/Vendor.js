@@ -1,1 +1,1 @@
-import '../_scripts/modernizr';
+import './Modernizr';

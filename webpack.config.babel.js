@@ -5,14 +5,16 @@ let path = require("path"),
     precss = require('precss'),
     autoprefixer = require('autoprefixer');
 
+const filePath = process.env.NODE_ENV ? "dist" : "app";
+
 module.exports = {
   entry: {
-    app: "./app/components/App.js",
-    vendor: "./app/components/Vendor.js"
+    app: `./${filePath}/components/App.js`,
+    vendor: `./${filePath}/components/Vendor.js`
   },
 
   output: {
-    path: __dirname + '/app/_scripts/',
+    path: __dirname + `/${filePath}/_scripts/`,
     publicPath: '/_scripts/',
     filename: "[name].js",
     chunkFilename: "[name]_[chunkhash].js"

@@ -8,16 +8,12 @@
     "cleanScripts": "rm -rf ./app/_scripts",
     "modernizr:app": "./node_modules/.bin/customizr -c ./tasks/modernizr.json",
     "scripts:app": "webpack -w",
-
-    "start": "npm run clean && npm run copy && npm run modernizr:dist && npm run scripts:dist && npm run cleanComponents & npm run images && npm run rev",
-    "clean": "rm -rf ./dist/",
-    "copy": "cp -r ./app/ ./dist/ && rm -rf ./dist/_scripts && rm -rf ./dist/images",
-    "modernizr:dist": "npm run modernizr:app && mkdir ./dist/_scripts && cp ./app/_scripts/modernizr.js ./dist/_scripts/",
-    "scripts:dist": "NODE_ENV=production webpack -p --config webpack.production.config.babel.js",
+    "start": "npm run clean:dist && npm run copy:dist && npm run scripts:dist && npm run versionAssets && npm run cleanComponents",
+    "clean:dist": "rm -rf ./dist/",
+    "copy:dist": "cp -r ./app/ ./dist/ && rm -rf ./dist/_scripts",
+    "scripts:dist": "NODE_ENV=production webpack -p",
     "cleanComponents": "rm -rf ./dist/components",
-    "images": "node ./tasks/minifyimages.js",
-    "rev": "node ./tasks/versionassets.js",
-    "new": "node ./tasks/newmodule.js"
+    "versionAssets": "node ./tasks/versionassets.js"
   },
   "author": "",
   "license": "ISC",
