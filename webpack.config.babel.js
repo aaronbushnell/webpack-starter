@@ -28,17 +28,14 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.css/,
-        loader: ExtractTextPlugin.extract("style", "css!postcss")
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("style-loader", ["css-loader", "postcss-loader"])
       }
     ]
   },
 
   postcss: function () {
-    return [
-      precss,
-      autoprefixer
-    ];
+    return [ precss, autoprefixer ];
   },
 
   plugins: [
