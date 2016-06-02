@@ -1,6 +1,6 @@
 import './index.css';
 
-export default class Header {
+export default class Base {
   constructor () {
     console.log('header time');
   }

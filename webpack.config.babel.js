@@ -13,6 +13,8 @@ let path = require("path"),
 const filePath = process.env.NODE_ENV ? "dist" : "app";
 
 module.exports = {
+  devtool: process.env.NODE_ENV ? "" : "source-map",
+
   entry: {
     app: `./${filePath}/components/App.js`,
     vendor: `./${filePath}/components/Vendor.js`

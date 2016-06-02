@@ -417,6 +417,7 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
 .Header {
   background: #aaa;
   padding: 2rem;
@@ -427,3 +428,9 @@ textarea {
   margin: 2rem 0 0 0;
   padding: 2rem;
 }
+
+body {
+  background: green;
+}
+
+/*# sourceMappingURL=app.css.map*/
