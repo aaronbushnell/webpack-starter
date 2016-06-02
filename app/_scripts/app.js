@@ -46,11 +46,13 @@
 
 	'use strict';
 
-	var _Header = __webpack_require__(1);
+	__webpack_require__(1);
+
+	var _Header = __webpack_require__(6);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(6);
+	var _Footer = __webpack_require__(9);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -73,11 +75,11 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Header = function Header() {
-	  _classCallCheck(this, Header);
+	var Normalize = function Normalize() {
+	  _classCallCheck(this, Normalize);
 	};
 
-	exports.default = Header;
+	exports.default = Normalize;
 
 /***/ },
 /* 2 */
@@ -102,6 +104,33 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+	var Header = function Header() {
+	  _classCallCheck(this, Header);
+	};
+
+	exports.default = Header;
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 8 */,
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	__webpack_require__(10);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 	var Footer = function Footer() {
 	  _classCallCheck(this, Footer);
 	};
@@ -109,7 +138,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 7 */
+/* 10 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

@@ -2,8 +2,13 @@ let path = require("path"),
     webpack = require("webpack"),
     ExtractTextPlugin = require("extract-text-webpack-plugin"),
     CommonsPlugin = new require("webpack/lib/optimize/CommonsChunkPlugin"),
-    precss = require('precss'),
-    autoprefixer = require('autoprefixer');
+    pcImport = require('postcss-import'),
+    pcNested = require('postcss-nested'),
+    pcMixins = require('postcss-mixins'),
+    pcColors = require('postcss-color-function'),
+    pcHexrgba = require('postcss-hexrgba'),
+    pcVars = require('postcss-simple-vars'),
+    pcAutoprefixer = require('autoprefixer');
 
 const filePath = process.env.NODE_ENV ? "dist" : "app";
 
@@ -35,7 +40,15 @@ module.exports = {
   },
 
   postcss: function () {
-    return [ precss, autoprefixer ];
+    return [
+      pcImport,
+      pcVars,
+      pcMixins,
+      pcNested,
+      pcColors,
+      pcHexrgba,
+      pcAutoprefixer
+    ];
   },
 
   plugins: [

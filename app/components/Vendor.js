@@ -1,1 +1,2 @@
 import './Modernizr';
+import 'picturefill';

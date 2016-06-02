@@ -37,13 +37,21 @@
     "mkdirp": "0.5.1",
     "node-version-assets": "1.1.0",
     "path": "0.12.7",
+    "postcss-color-function": "2.0.1",
+    "postcss-hexrgba": "0.2.0",
+    "postcss-import": "8.1.2",
     "postcss-loader": "0.8.2",
+    "postcss-mixins": "4.0.1",
+    "postcss-nested": "1.0.0",
+    "postcss-simple-vars": "1.2.0",
     "precss": "1.4.0",
     "style-loader": "0.13.1",
     "svg-sprite": "1.2.19",
     "webpack": "1.13.0"
   },
   "dependencies": {
-    "delegate-events": "1.1.1"
+    "delegate-events": "1.1.1",
+    "normalize.css": "4.1.1",
+    "picturefill": "3.0.2"
   }
 }
